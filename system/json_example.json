@@ -1,9 +1,9 @@
 {
   "next_file": "file2.json",
   "scenes": [
-    {"background": "bg1", "character": "himu1", "text" : "This is as much fun as I can have",  "musique" : "sound.ogg", "sfx" : "", "animation" : ""
+    {"background": "bg1", "character": "himu1", "text" : "This is as much fun as I can have",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
     },
-    {"background": "bg2", "character": "himu2", "text" : "Do you like pizza? ","musique" : "sound.ogg", "sfx" : "", "animation" : "", "choix": [
+    {"background": "bg1", "character": "himu1", "text" : "Do you like pizza? ","music" : "radwimp.ogg", "sfx" : "", "animation" : "", "choix": [
         {
           "content" : "YES I DO!",
           "next_file" : "pizza.json"
@@ -14,9 +14,11 @@
         }
       ]
     },
-         {"background": "bg2", "character": "himu1", "text" : "Ah, yes I do!",  "musique" : "sound.ogg", "sfx" : "", "animation" : ""
+         {"background": "bg1", "character": "himu1", "text" : "Ah, yes I do!",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
     },
-      {"background": "bg2", "character": "himu1", "text" : "And very much!",  "musique" : "sound.ogg", "sfx" : "", "animation" : ""
+      {"background": "bg1", "character": "himu1", "text" : "And very much!",  "music" : "radwimp.ogg", "sfx" : "", "animation" : ""
+    },
+      {"background": "bg1", "character": "himu1", "text" : "And very much! 2",  "music" : "radwimp.ogg", "sfx" : "", "animation" : ""
     }
   ]
 }

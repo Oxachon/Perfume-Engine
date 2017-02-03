@@ -5,7 +5,7 @@ from apps.audio import audio_handler
 from apps.display import print_display
 
 # Defining start file
-start_file = 'system/json_example.json'
+current_file = 'system/json_example.json'
 
 # pygame class init
 pygame.init()
@@ -21,10 +21,11 @@ ui = pygame.image.load("media/ui/messagebox.png")
 is_start = 1
 score = 0
 i = 0
+# Parsing first default file
+json_obj = json_parser(current_file)
+
 # Main loop
 while is_start:
-    json_obj = json_parser(start_file)
-
     # Song load
     if (json_obj['scenes'][i]['music'] != '' or json_obj['scenes'][i]['music'] is not None) \
             and previousSound != json_obj['scenes'][i]['music']:
@@ -38,6 +39,10 @@ while is_start:
     if value_event == 'LEFT_CLICK':
         if i < len(json_obj['scenes'])-1:
             i += 1
+        elif json_obj['next_file'] is not None and i == len(json_obj['scenes'])-1 :
+            i = 0
+            json_obj = json_parser('system/'+json_obj['next_file'])
 
     # Display game
     print_display(window, pygame, json_obj['scenes'][i], ui, myfont)
+

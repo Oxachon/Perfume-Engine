@@ -1,5 +1,5 @@
 {
-  "next_file": "file2.json",
+  "next_file": "next_file.json",
   "scenes": [
     {"background": "bg1", "character": "himu1", "text" : "This is as much fun as I can have",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
     },

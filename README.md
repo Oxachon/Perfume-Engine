@@ -12,8 +12,7 @@ The engine will feature:
   - Multi platform
   - Magic
  
-Made by : 
-[![N|Oxachon](http://i.imgur.com/a7PCYUz.png)](https://twitter.com/oxachon)
+Made by : PaphaC
 
 ### Installation
 

@@ -1,9 +1,9 @@
 {
   "next_file": "json_example.json",
   "scenes": [
-    {"background": "bg1", "character": "f.png", "text" : "This is as much fun as I can have",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
+    {"background": "bg1", "character": "f.png", "text" : "This is the second file handling",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
     },
-    {"background": "bg1", "character": "f.png", "text" : "Do you like pizza? ","music" : "radwimp.ogg", "sfx" : "", "animation" : "", "choix": [
+    {"background": "bg1", "character": "f.png", "text" : "Do you like your name ? ","music" : "radwimp.ogg", "sfx" : "", "animation" : "", "choix": [
         {
           "content" : "YES I DO!",
           "next_file" : "pizza.json"

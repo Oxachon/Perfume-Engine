@@ -21,6 +21,7 @@ ui = pygame.image.load("media/ui/messagebox.png")
 is_start = 1
 score = 0
 i = 0
+j = 0
 # Parsing first default file
 json_obj = json_parser(current_file)
 
@@ -31,18 +32,25 @@ while is_start:
             and previousSound != json_obj['scenes'][i]['music']:
         audio_handler(json_obj['scenes'][i]['music'], pygame)
         previousSound = json_obj['scenes'][i]['music']
-
+    current_phrase_len = len(json_obj['scenes'][i]['text'])
     # Event handling in here
     value_event = event_handler(pygame.event.get())
     if value_event == 'QUIT':
         is_start = 0
     if value_event == 'LEFT_CLICK':
         if i < len(json_obj['scenes'])-1:
-            i += 1
-        elif json_obj['next_file'] is not None and i == len(json_obj['scenes'])-1 :
+            if j < current_phrase_len:
+                j = current_phrase_len
+            else:
+                i += 1
+                j = 0
+        elif json_obj['next_file'] is not None and i == len(json_obj['scenes'])-1:
             i = 0
+            j = 0
             json_obj = json_parser('system/'+json_obj['next_file'])
 
     # Display game
-    print_display(window, pygame, json_obj['scenes'][i], ui, myfont)
+    if j < current_phrase_len:
+        j += 1
+    print_display(window, pygame, json_obj['scenes'][i], ui, myfont, j)
 

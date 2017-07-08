@@ -1,5 +1,4 @@
-
-def print_display(window, pygame, json_obj, ui, myfont):
+def print_display(window, pygame, json_obj, ui, myfont, numchar):
     # Refilling to empty current space
     window.fill(pygame.Color("white"))
 
@@ -14,7 +13,7 @@ def print_display(window, pygame, json_obj, ui, myfont):
     # The UI is the last fo be blitz
     window.blit(ui, (5, 420))
 
-    score = json_obj['text']
+    score = json_obj['text'][0:numchar]
     label = myfont.render(score, 1, (0, 0, 0))
     window.blit(label, (100, 560))
     # Refreshing the display with all the layers set

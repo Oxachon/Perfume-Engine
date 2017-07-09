@@ -1,24 +1,17 @@
 {
-  "next_file": "next_file.json",
+  "next_file": "json_example.json",
   "scenes": [
-    {"background": "bg1", "character": "himu1", "text" : "This is as much fun as I can have",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
+    {"name": "Alma", "sprite": "elma_n", "text" : "Hey Jill ! How are you doing tonight my dear?",  "music" : "every_day_is_night.ogg"
     },
-    {"background": "bg1", "character": "himu1", "text" : "Do you like pizza? ","music" : "radwimp.ogg", "sfx" : "", "animation" : "", "choix": [
-        {
-          "content" : "YES I DO!",
-          "next_file" : "pizza.json"
-        },
-        {
-          "content" : "No fuck you!",
-          "next_file" : "nopizzaforyou.json"
-        }
-      ]
+    {"name": "Jill", "text" : "Hey Alma. Do you like pizza..?"
     },
-         {"background": "bg1", "character": "himu1", "text" : "Ah, yes I do!",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
+    {"name": "Jill", "text" : "Because I have a lot of them in the store right now."
     },
-      {"background": "bg1", "character": "himu1", "text" : "And very much!",  "music" : "radwimp.ogg", "sfx" : "", "animation" : ""
+    {"name": "Jill", "text" : "And I won't be eating them."
     },
-      {"background": "bg1", "character": "himu1", "text" : "And very much! 2",  "music" : "radwimp.ogg", "sfx" : "", "animation" : ""
+    {"name": "Alma", "text" : "Ah, yes I do! But are you sure? Because Akai sucks a lot."
+    },
+      {"name": "Jill", "text" : "Don't worry about it. He's just a piece of trash."
     }
   ]
 }

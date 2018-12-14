@@ -12,8 +12,7 @@ The engine will feature:
   - Multi platform
   - Magic
  
-Made by : 
-[![N](http://i.imgur.com/a7PCYUz.png)]PaphaC
+Made by : PaphaC
 
 ### Installation
 

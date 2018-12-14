@@ -1,0 +1,24 @@
+{
+  "next_file": "json_example.json",
+  "scenes": [
+    {"background": "bg1", "character": "f.png", "text" : "This is the second file handling",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
+    },
+    {"background": "bg1", "character": "f.png", "text" : "Do you like your name ? ","music" : "radwimp.ogg", "sfx" : "", "animation" : "", "choix": [
+        {
+          "content" : "YES I DO!",
+          "next_file" : "pizza.json"
+        },
+        {
+          "content" : "No fuck you!",
+          "next_file" : "nopizzaf.pngoryou.json"
+        }
+      ]
+    },
+         {"background": "bg1", "character": "f.png", "text" : "Ah, yes I do!",  "music" : "bgm01.ogg", "sfx" : "", "animation" : ""
+    },
+      {"background": "bg1", "character": "himu1", "text" : "And very much!",  "music" : "radwimp.ogg", "sfx" : "", "animation" : ""
+    },
+      {"background": "bg1", "character": "himu1", "text" : "And very much! 2",  "music" : "radwimp.ogg", "sfx" : "", "animation" : ""
+    }
+  ]
+}
